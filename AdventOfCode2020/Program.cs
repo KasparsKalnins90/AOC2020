@@ -7,7 +7,8 @@ namespace AdventOfCode2020
     {
         static void Main(string[] args)
         {
-            ExpenseReportCalculator.Get2020();
+            //ExpenseReportCalculator.Get2020FromTwoNumbers();
+            ExpenseReportCalculator.Get2020FromThreeNumbers();
         }
     }
 }
