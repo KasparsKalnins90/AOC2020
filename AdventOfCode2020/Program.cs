@@ -1,12 +1,13 @@
 ﻿using System;
+using System.IO;
 
 namespace AdventOfCode2020
 {
-    class Program
+    public  class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            ExpenseReportCalculator.Get2020();
         }
     }
 }
