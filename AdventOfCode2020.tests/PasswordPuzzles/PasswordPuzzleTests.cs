@@ -41,7 +41,8 @@ namespace AdventOfCode2020.tests.PasswordPuzzles
 
         public bool IsPasswordValid_ShouldReturnTrueIfPasswordValid(string puzzleInputLine)
         {
-            return PasswordValidator.IsPasswordValid(puzzleInputLine);
+            var passwordInfo= new PasswordInfo(puzzleInputLine);
+            return PasswordValidator.IsPasswordValid(passwordInfo);
         }
 
         [TestCase("1-3 a: abcde", ExpectedResult = true)]
@@ -49,7 +50,9 @@ namespace AdventOfCode2020.tests.PasswordPuzzles
         [TestCase("2-9 c: ccccccccc", ExpectedResult = false)]
         public bool IsPasswordReallyValid_ShouldReturnTrueIfPasswordReallyValid(string puzzleInputLine)
         {
-            return PasswordValidator.IsPasswordReallyValid(puzzleInputLine);
+            var passwordInfo = new PasswordInfo(puzzleInputLine);
+
+            return PasswordValidator.IsPasswordReallyValid(passwordInfo);
         }
     }
 
