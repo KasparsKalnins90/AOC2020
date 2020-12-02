@@ -2,10 +2,10 @@
 {
     public class PasswordInfo
     {
-        public int RangeFrom { get; set; }
-        public int RangeTo { get; set; }
-        public char RepeatingLetter { get; set; }
-        public string StoredPassword { get; set; }
+        public int RangeFrom { get; }
+        public int RangeTo { get; }
+        public char RepeatingLetter { get; }
+        public string StoredPassword { get; }
 
         public PasswordInfo(string passwordInfoLine)
         {

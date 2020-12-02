@@ -26,6 +26,19 @@ namespace AdventOfCode2020.PasswordPuzzles
 
             return validPasswordCount;
         }
+        public static int GetActualValidPasswordCount()
+        {
+            var validPasswordCount = 0;
+            foreach (var puzzleLine in PuzzleInput)
+            {
+                if (IsPasswordReallyValid(puzzleLine))
+                {
+                    validPasswordCount++;
+                }
+            }
+
+            return validPasswordCount;
+        }
         public static bool IsPasswordValid(string passwordInfoLine)
         {
 
@@ -40,6 +53,18 @@ namespace AdventOfCode2020.PasswordPuzzles
             }
             var result = letterCount <= passwordInfo.RangeTo && letterCount >= passwordInfo.RangeFrom;
             return result;
+        }
+
+        public static bool IsPasswordReallyValid(string passwordInfoLine)
+        {
+            var passwordInfo = new PasswordInfo(passwordInfoLine);
+            var isNeededLetterAtFirstPosition =  
+                passwordInfo.StoredPassword[passwordInfo.RangeFrom-1] == passwordInfo.RepeatingLetter;
+            var isNeededLetterAtSecondPosition =
+                passwordInfo.StoredPassword[passwordInfo.RangeTo-1] == passwordInfo.RepeatingLetter;
+
+            return (isNeededLetterAtFirstPosition && !isNeededLetterAtSecondPosition)
+                   || (isNeededLetterAtSecondPosition && !isNeededLetterAtFirstPosition);
         }
     }
 }

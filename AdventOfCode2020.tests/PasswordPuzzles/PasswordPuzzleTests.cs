@@ -43,6 +43,14 @@ namespace AdventOfCode2020.tests.PasswordPuzzles
         {
             return PasswordValidator.IsPasswordValid(puzzleInputLine);
         }
+
+        [TestCase("1-3 a: abcde", ExpectedResult = true)]
+        [TestCase("1-3 b: cdefg", ExpectedResult = false)]
+        [TestCase("2-9 c: ccccccccc", ExpectedResult = false)]
+        public bool IsPasswordReallyValid_ShouldReturnTrueIfPasswordReallyValid(string puzzleInputLine)
+        {
+            return PasswordValidator.IsPasswordReallyValid(puzzleInputLine);
+        }
     }
 
 }
