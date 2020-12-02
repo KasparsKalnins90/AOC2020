@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using AdventOfCode2020.PasswordPuzzles;
 
 namespace AdventOfCode2020
 {
@@ -7,8 +8,7 @@ namespace AdventOfCode2020
     {
         static void Main(string[] args)
         {
-            //ExpenseReportCalculator.Get2020FromTwoNumbers();
-            ExpenseReportCalculator.Get2020FromThreeNumbers();
+            Console.WriteLine($"There are {PasswordValidator.GetValidPasswordCount()} valid passwords");
         }
     }
 }
