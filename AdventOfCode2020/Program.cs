@@ -1,6 +1,4 @@
-﻿using System;
-using AdventOfCode2020.PasswordPuzzles;
-using AdventOfCode2020.TreeMapPuzzles;
+﻿using AdventOfCode2020.TreeMapPuzzles;
 
 namespace AdventOfCode2020
 {
@@ -8,7 +6,7 @@ namespace AdventOfCode2020
     {
         static void Main(string[] args)
         {
-            TreeCounter.GetTreeCount();
+            TreeCounter.GetTreeCountFromAllSlopes();
         }
     }
 }
