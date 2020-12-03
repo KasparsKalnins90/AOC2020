@@ -32,9 +32,9 @@ namespace AdventOfCode2020
             //there must be a better readable way than a nested for loop :)
             for (int i = 0; i < PuzzleInput.Count; i++)
             {
-                for (int j = 0; j < PuzzleInput.Count-1; j++)
+                for (int j = i+1; j < PuzzleInput.Count-1; j++)
                 {
-                    for (int k = 0; k < PuzzleInput.Count-2; k++)
+                    for (int k = j+1; k < PuzzleInput.Count-2; k++)
                     {
                         if (PuzzleInput[i] + PuzzleInput[j] + PuzzleInput[k] == 2020)
                         {
