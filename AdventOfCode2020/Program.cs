@@ -6,7 +6,7 @@ namespace AdventOfCode2020
     {
         static void Main(string[] args)
         {
-            PassportValidator.GetValidPassportCount();
+            PassportValidator.GetValidPasswordCount();
         }
     }
 }
