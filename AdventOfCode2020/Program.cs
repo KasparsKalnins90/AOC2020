@@ -1,4 +1,4 @@
-﻿using AdventOfCode2020.TreeMapPuzzles;
+﻿using AdventOfCode2020.PassportPuzzles;
 
 namespace AdventOfCode2020
 {
@@ -6,7 +6,7 @@ namespace AdventOfCode2020
     {
         static void Main(string[] args)
         {
-            TreeCounter.GetTreeCountFromAllSlopes();
+            PassportValidator.GetValidPassportCount();
         }
     }
 }
