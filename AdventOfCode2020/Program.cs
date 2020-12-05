@@ -1,4 +1,4 @@
-﻿using AdventOfCode2020.PassportPuzzles;
+﻿using AdventOfCode2020.PlaneSeatPuzzles;
 
 namespace AdventOfCode2020
 {
@@ -6,7 +6,7 @@ namespace AdventOfCode2020
     {
         static void Main(string[] args)
         {
-            PassportValidator.GetValidPasswordCount();
+            BoardingPassReader.GetHighestSeatId();
         }
     }
 }
