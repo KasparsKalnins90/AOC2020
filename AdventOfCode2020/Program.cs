@@ -1,4 +1,4 @@
-﻿using AdventOfCode2020.PlaneSeatPuzzles;
+﻿using AdventOfCode2020.CustomsDeclarationsPuzzles;
 
 namespace AdventOfCode2020
 {
@@ -6,7 +6,9 @@ namespace AdventOfCode2020
     {
         static void Main(string[] args)
         {
-            BoardingPassReader.GetHighestSeatId();
+            new CustomDeclarationAnswerReader().GetAllYesAnswersForStarOne();
+
+            new CustomDeclarationAnswerReader().GetAllYesAnswersForStarTwo();
         }
     }
 }

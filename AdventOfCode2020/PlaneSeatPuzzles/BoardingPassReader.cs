@@ -8,7 +8,7 @@ namespace AdventOfCode2020.PlaneSeatPuzzles
     {
         public static void GetHighestSeatId()
         {
-            var puzzleInput = new PuzzleInputReader("BoardingPasses").PuzzleInfo;
+            var puzzleInput = new PuzzleInputReader("BoardingPasses").PuzzleInputAsEnumerable;
             var seatIds = puzzleInput.Select(GetSeatId).ToList();
             
             Console.WriteLine($"the largest seat Id is {seatIds.Max()}");
